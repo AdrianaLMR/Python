@@ -17,6 +17,8 @@ print('Dividindo dois números')
 number5 = float(input('Digite um número'))
 number6 = float(input('Digite o segundo número'))
 dividir = number5 / number6
+# Formata o números de casas decimais
+print('a divisão dos {} e {} é igual: {:.2f}'.format(number5, number6,dividir))
 
 print('A divisão  entre {} e {} é igual a: {}'.format(number5, number6, dividir))
 
