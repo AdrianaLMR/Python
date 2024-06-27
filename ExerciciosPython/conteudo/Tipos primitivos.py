@@ -13,3 +13,5 @@ print('O resultado do calculo é: {}'.format(calculo))
 
 #print('A subtração entre ', value1, 'e', value2, 'é igual a: ', calculo) - Formato antigo do python
 print('A subtração entre {} e {} é igual a: {}'.format(value1, value2, calculo))
+
+
