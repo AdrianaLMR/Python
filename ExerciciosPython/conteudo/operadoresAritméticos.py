@@ -40,4 +40,4 @@ print('Seja bem vindo {:10}!'.format(nome)) #adiciona o espaco
 print('Seja bem vindo {:<20}!'.format(nome)) #alina a esquerda
 print('Seja bem vindo {:>30}!'.format(nome)) #alinha a direita
 print('Seja bem vindo {:^10}!'.format(nome)) #centraliza
-print('Seja bem vindo {:=^10}!'.format(nome)) #centraliza e adiciona carcater
+print('Seja bem vindo {:^10}!'.format(nome))  # Centraliza e preenche com o caracter padrão (espaço)
