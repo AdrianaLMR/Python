@@ -16,7 +16,7 @@
 # Você pode importar tudo de um módulo usando "*", mas isso não é recomendado, pois pode causar conflitos de nome.
 
 # Python vem com uma biblioteca padrão rica em módulos. Por exemplo, você pode usar o módulo 'math' para funções matemáticas.
-# -->
+
 
 # Você pode instalar módulos de terceiros usando o 'pip', que é o gerenciador de pacotes do Python
 
