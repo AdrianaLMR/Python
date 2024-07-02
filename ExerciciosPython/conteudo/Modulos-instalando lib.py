@@ -30,3 +30,8 @@ print(emoji.demojize("Python é 👍", language='pt'))
 #Versãoatualizada do exemplo acima
 print(emoji.emojize("olá mundo :earth_americas:!", language='alias'))
 
+#19 Um professor quer sortear um de seus quatro alunos para apagar o quadro. Faça um programa que ajude ele, lendo o nome deles e escrevendo o nome do escolhido.
+
+# 20 O mesmo professor do desafio anterior(19) quer sortear a ordem de apresentação de trabalhos dos alunos. Faça um programa que elia o nome dos quatro alunos e mostre a ordem sorteada.
+
+# 21 Faça um programa em python que abre e reproduza áudio de um arquivo MP3.
