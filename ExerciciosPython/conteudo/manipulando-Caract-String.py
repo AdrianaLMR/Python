@@ -58,7 +58,7 @@ print('Existe {} letras "O" na frase {}'.format(contador, frase))
 
 carta = "Olá, mundo! Olá, universo!"
 contagem = texto.count("Olá", 0, 12)
-print('Número de vezes que "Olá" aparece nos primeiros 12 caracteres:'.format(contagem))
+print('Número de vezes que "Olá" aparece nos primeiros 12 caracteres: {}'.format(contagem))
 
 # A função find é um método usado para localizar a primeira ocorrência de uma substring dentro de uma string.
 # Ela retorna o índice da primeira posição onde a substring é encontrada. Se a substring não for encontrada, o método
@@ -66,7 +66,7 @@ print('Número de vezes que "Olá" aparece nos primeiros 12 caracteres:'.format(
 
 paragrafo = "Eu amo gatos"
 indice = paragrafo.find("gat")
-print('Índice da primeira ocorrência de "gat":', indice)
+print('Índice da primeira ocorrência de "gat": {}'.format(indice))
 
 # Operador "IN" é usado para verificar se um valor está presente em uma sequência, como uma string, lista, tupla,
 # conjunto ou dicionário. Ele retorna um valor booleano True se o valor estiver presente e False caso contrário.
