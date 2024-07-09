@@ -10,6 +10,6 @@ print('Número inteiro aleatório {}'.format(numero))
 
 # Número float aleatório
 valor = random.uniform(1, 10)
-print('Número float aleatório {}'.format(valor))
+print('Número float aleatório {.:1}'.format(valor))
 
 

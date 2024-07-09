@@ -2,20 +2,47 @@
 # tentar descobrir qual  foi o número escolhido pelo computador. O programa deverá escrever na tela se o usuário
 # venceu ou perdeu.
 
-# 29 Escreva um programa que leia a velocidade de um carro. Se ele ultrapassar 80Km/h, mostre uma mensagem dizendo
-# que ele foi multado. A multa vai custar R$ 7.00 por cada Km acima do limite
+import random
 
-# 30 Crie um programa que leia um número inteiro e mostre na tela se ele é par ou inpar.
+print('--' * 10)
+print('Tente adivinhar um número entre 0 e 5: ')
+print('--' * 10)
 
-# 31 Desenvolva um programa que pergunte a distância de uma viagem em Km. Calcule o preço da passagem, cobrando
-#R$0.50 por Km para viagens de até 200Km e R$0.45 para viagens mais longas.
+#Gerando número aleatório
+num_alea = int(random.uniform(0, 5))
 
-# 32 Faça um programa que leia um ano qualquer e mostre se ele é bissexto.
+# pedi número pro usuário
+numero = int(input('Qual número eu pensei? '))
 
-# 33 Faça um programa que leia três números e mostre qual é o maior e qual é o menor.
+# verificar número usuário == número(var)
 
-# 34 Faça um programa que pergunte o salário de um funcionário e calcule o valor do seu aumento. para salários superiores
-#R$1.250.00, calcule um aumento de 10%. Para inferiores ou iguais, o aumento é de 15%.
+if numero == num_alea:
+    print('Você adivinhou!')
+elif numero >= 6:
+    print('Digite um valor entre 0 e 5')
+else:
+    print('Você não acertou!o número correto era: {}'.format(num_alea))
 
-#35 Desenvolva um programa que leia o comprimento de três retas e diga ao usuário se elas podem ou não formar um triângulo.
-#EX: Os tamanhos da reta devem ser proporcionais para isso, pesquisar sobre o princípio do triângulo.
+# Outra forma de resolução
+from random import randint
+from time import sleep
+
+#Gerando número aleatório
+computador = randint(0, 5)
+
+print('-=-' * 10)
+print('Adivinhe o número que eu pensei entre 0 e 5: ')
+print('-=-' * 10)
+
+# pedi número pro usuário
+jogador = int(input('Digite o número: '))
+
+#lib time/ método sleep
+print('PROCESSANDO...')
+sleep(3)
+
+#Comparando os números
+if jogador == computador:
+    print('Você acertou!')
+else:
+    print('Você errou! o número correto era: {}'.format(computador))
