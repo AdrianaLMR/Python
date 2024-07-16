@@ -58,4 +58,3 @@ else:
 # testes e integração contínua.
 
 # --> Aplicações Desktop: Bibliotecas como Tkinter e PyQt permitem a criação de aplicações GUI.
-
