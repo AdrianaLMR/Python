@@ -42,4 +42,3 @@ palavra = str(input('Digite uma palavra: '))
 print(type(palavra), palavra)
 
 
-
