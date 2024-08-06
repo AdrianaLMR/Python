@@ -5,17 +5,33 @@
 
 casa = float(input('Digite o valor da casa: '))
 salario = float(input('Digite o valor do seu salário: '))
-anos_pagamento = float(input('Digite quantos anos pretende pagar o valor da casa: '))
+anos = int(input('Digite quantos anos pretende pagar o valor da casa: '))
 
 #Calcula o valor da prestaçaõ mensal
-meses_pagamento = anos_pagamento * 12 #converte anos em meses
+meses_pagamento = anos * 12 #converte anos em meses
 prestacao = salario / 30 #divide o valor da casa pelo número de meses de pagamento.
 
-# Verificase a prestaçaõ mensal é maior que 30% do salário
+# Verificase a prestação mensal é maior que 30% do salário
 limite = salario * 0.3
 
-print('\nAnalisando o empréstimo...')
+print('\n Analisando o empréstimo...')
 if prestacao <= limite:
     print('Empréstimo negado!')
 else:
     print('Empréstimo aprovado!')
+
+print('Para Pagar uma casa de R${:.2f} em {} anso'.format(casa, anos), end='')
+print(' a prestação será de R${:.2f}'.format(prestacao))
+# exemplo aula
+cas = float(input('Digite o valor da casa: '))
+sal = float(input('Digite o valor do seu salário: '))
+ano = int(input('Digite quantos anos pretende pagar o valor da casa: '))
+
+prest = casa / (ano * 12)
+minimo = sal * 30 / 100
+if prest <= minimo:
+    print('Empréstimo aprovado!')
+else:
+    print('Empréstimo Negado!')
+print('Para Pagar uma casa de R${:.2f} em {} anos'.format(cas, ano), end='')
+print(' a prestação será de R${:.2f}'.format(prest))
