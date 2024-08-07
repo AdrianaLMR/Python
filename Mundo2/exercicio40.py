@@ -15,3 +15,5 @@ elif 5.0 <= media <= 6.9:
     print('Você está de RECUPERAÇÃO!')
 else:
     print('Você foi APROVADO!')
+
+
