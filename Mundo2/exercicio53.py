@@ -1,10 +1,37 @@
-# 53 Crie um programa que leia uma frase qualquer e diga se ela é palíndroma=o, desconsiderando os
+# 53 Crie um programa que leia uma frase qualquer e diga se ela é palíndroma, desconsiderando os
 # espaços, exemplos:
 # Após a sopa
 # a sacada da casa
 # A torre da derrota
 # o lobo ama o bolo
 # anotaram a data da maratona
+
+# frase = str(input('Digite uma frase: '))
+# frase_esp = frase.replace(" ", "")
+#
+# if frase_esp == frase_esp[::-1]:
+#     print('A frase é palíndroma!')
+# else:
+#     print('A frase não é palíndroma!')
+
+
+# Lê a frase do usuário
+entrada = input("Digite uma frase: ")
+
+# Remove espaços e caracteres especiais, e converte para minúsculas
+entrada = ''.join(c.lower() for c in entrada if c.isalnum())
+
+# Verifica se a frase é um palíndromo
+if entrada == entrada[::-1]:
+    print("A frase é um palíndromo.")
+else:
+    print("A frase não é um palíndromo.")
+
+
+
+
+
+
 
 # 54 Crie um programa que leia o ano de nascimento de sete pessoas. No final, mostre quantas pessoas
 
